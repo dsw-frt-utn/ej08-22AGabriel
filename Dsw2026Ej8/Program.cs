@@ -14,7 +14,7 @@
             */
 
             // Ejercicio 2
-
+            /*
             Problema2 problema2 = new Problema2();
 
             string resultado1 = problema2.CrearResumenVenta(1234, "Mouse Inalámbrico", 2, 15000.50m);
@@ -23,6 +23,19 @@
             //Prueba con cantidad menor o igual a 0
             string resultado2 = problema2.CrearResumenVenta(1234, "Mouse Inalámbrico", -1, 15000.50m);
             Console.WriteLine(resultado2);
+            */
+
+            // Ejercicio 3
+
+            Product producto = new Product();
+            producto.Description = "Mouse Original";
+
+            Problema3 problema3 = new Problema3();
+
+            int numeroOriginal = 5;
+            string resultado = problema3.CompararCopias(numeroOriginal, producto);
+
+            Console.WriteLine(resultado);
         }
     }
 }
