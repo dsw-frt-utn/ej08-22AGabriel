@@ -1,0 +1,24 @@
+namespace Dsw2026Ej8;
+
+public class Problema2
+{
+    public string CrearResumenVenta(long productCode, string productDescription, int quantity, decimal unitPrice)
+    {
+        decimal total;
+
+        if (quantity > 0)
+            total = quantity * unitPrice;
+        else
+            total = 0m;
+
+        var resumen = new
+        {
+            Code = productCode,
+            Description = productDescription,
+            Quantity = quantity,
+            Total = total
+        };
+
+        return $"{resumen.Code}-{resumen.Description}-{resumen.Total}";
+    }
+}
