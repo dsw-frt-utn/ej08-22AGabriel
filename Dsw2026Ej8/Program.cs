@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ProductHelper helper = new ProductHelper();
+
+            string etiqueta = helper.ObtenerEtiquetaProducto(123456789, "Teclado Gamer", 45000.50m);
+
+            Console.WriteLine(etiqueta);
         }
     }
 }
