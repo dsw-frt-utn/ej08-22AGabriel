@@ -26,7 +26,7 @@
             */
 
             // Ejercicio 3
-
+            /*
             Product producto = new Product();
             producto.Description = "Mouse Original";
 
@@ -36,6 +36,17 @@
             string resultado = problema3.CompararCopias(numeroOriginal, producto);
 
             Console.WriteLine(resultado);
+            */
+
+            // Ejercicio 4
+
+            Problema4 problema = new Problema4();
+
+            Console.WriteLine(problema.CalcularPromedio(10, 8, 6));
+
+            Console.WriteLine(problema.CalcularPromedio(null, -10, 7));
+
+            Console.WriteLine(problema.CalcularPromedio(null, null, null));
         }
     }
 }
