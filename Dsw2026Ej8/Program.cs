@@ -56,6 +56,7 @@
             // -------------------------------------------------------
             // ------------------   Ejercicio 5   --------------------
             // -------------------------------------------------------
+            /*
             Problema5 problema = new Problema5();
 
             RetailSale ventaMenor = new RetailSale();
@@ -67,6 +68,17 @@
             ventaMayor.Subtotal = 1000m;
             decimal totalMayor = problema.ObtenerImporteFinal(ventaMayor);
             Console.WriteLine("Total mayorista: " + totalMayor);
+            */
+            // -------------------------------------------------------
+            // ------------------   Ejercicio 6   --------------------
+            // -------------------------------------------------------
+            Problema6 problema = new Problema6();
+
+            string prueba1 = problema.NormalizarCodigoProducto(" ab 123 x ");
+            Console.WriteLine(prueba1);
+
+            string prueba2 = problema.NormalizarCodigoProducto(null);
+            Console.WriteLine(prueba2);
         }
     }
 }
